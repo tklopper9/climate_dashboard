@@ -1,0 +1,24 @@
+[project]
+name = "climate-dashboard"
+version = "0.1.0"
+description = "Making a dashboard with climate change data"
+authors = [
+    {name = "tklopper9",email = "tanja.ploeger@posteo.de"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "marimo (>=0.13.10,<0.14.0)",
+    "pandas (>=2.2.3,<3.0.0)"
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+plotly = "^6.1.0"
+dash = "^3.0.4"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
